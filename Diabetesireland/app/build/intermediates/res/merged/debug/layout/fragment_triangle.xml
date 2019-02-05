@@ -1,0 +1,277 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="100dp">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:showIn="@layout/activity_triangle"
+    android:background="#ffffff"
+    tools:context=".Triangle">
+
+    <com.github.glomadrian.dashedcircularprogress.DashedCircularProgress
+        android:id="@+id/circleView"
+        app:external_color="@color/circle_text"
+        app:base_color="@color/progress_color_bg"
+        app:min="0"
+        app:max="10000"
+        app:progress_color="@color/circle_text"
+        app:progress_icon="@mipmap/ic_pedometer_icon"
+        app:duration="3500"
+        app:progress_stroke_width="48"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="25sp"
+                android:id="@+id/text"
+                android:textColor="@color/circle_text"
+                android:text="Steps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/step_number"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/text"
+                android:textColor="@color/circle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </com.github.glomadrian.dashedcircularprogress.DashedCircularProgress>
+
+    <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+        android:id="@+id/water_prog"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:rcBackgroundColor="@color/progress_color_bg"
+        app:rcBackgroundPadding="2dp"
+        app:rcIconBackgroundColor="@color/water_color_icon"
+        app:rcIconPadding="1dp"
+        app:rcIconSize="40dp"
+        app:rcIconSrc="@mipmap/ic_water_icon"
+        app:rcMax="8"
+        app:rcProgressColor="@color/water_color_progress"
+        app:rcRadius="5dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_marginTop="10dp" />
+
+
+    <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+        android:id="@+id/fg_prog"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:rcBackgroundColor="@color/progress_color_bg"
+        app:rcBackgroundPadding="2dp"
+        app:rcIconBackgroundColor="@color/fg_color_icon"
+        app:rcIconPadding="1dp"
+        app:rcIconSize="40dp"
+        app:rcIconSrc="@mipmap/ic_fg_icon"
+        app:rcMax="6"
+        app:rcProgressColor="@color/fg_color_progress"
+        app:rcRadius="5dp"
+        android:layout_below="@+id/water_prog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+
+    <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+        android:id="@+id/carb_prog"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:rcBackgroundColor="@color/progress_color_bg"
+        app:rcBackgroundPadding="2dp"
+        app:rcIconBackgroundColor="@color/carb_color_icon"
+        app:rcIconPadding="1dp"
+        app:rcIconSize="40dp"
+        app:rcIconSrc="@mipmap/ic_carb_icon"
+        app:rcMax="5"
+        app:rcProgressColor="@color/carb_color_progress"
+        app:rcRadius="5dp"
+        android:layout_below="@+id/fg_prog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+
+    <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+        android:id="@+id/dairy_prog"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:rcBackgroundColor="@color/progress_color_bg"
+        app:rcBackgroundPadding="2dp"
+        app:rcIconBackgroundColor="@color/dairy_color_icon"
+        app:rcIconPadding="1dp"
+        app:rcIconSize="40dp"
+        app:rcIconSrc="@mipmap/ic_dairy_icon"
+        app:rcMax="4"
+        app:rcProgressColor="@color/dairy_color_progress"
+        app:rcRadius="5dp"
+        android:layout_below="@+id/carb_prog"
+        android:layout_alignLeft="@+id/protein_prog"
+        android:layout_alignStart="@+id/protein_prog"
+        android:layout_marginTop="25dp" />
+
+    <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+        android:id="@+id/protein_prog"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:rcBackgroundColor="@color/progress_color_bg"
+        app:rcBackgroundPadding="2dp"
+        app:rcIconBackgroundColor="@color/protein_color_icon"
+        app:rcIconPadding="1dp"
+        app:rcIconSize="40dp"
+        app:rcIconSrc="@mipmap/ic_protein_icon"
+        app:rcMax="1"
+        app:rcProgressColor="@color/protein_color_progress"
+        app:rcRadius="5dp"
+        android:layout_below="@+id/dairy_prog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+        android:id="@+id/alcohol_prog"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:rcBackgroundColor="@color/progress_color_bg"
+        app:rcBackgroundPadding="2dp"
+        app:rcIconBackgroundColor="@color/alc_color_icon"
+        app:rcIconPadding="1dp"
+        app:rcIconSize="40dp"
+        app:rcIconSrc="@mipmap/ic_alc_icon"
+        app:rcMax="3"
+        app:rcProgressColor="@color/alc_color_progress"
+        app:rcRadius="5dp"
+        android:layout_below="@+id/protein_prog"
+        android:layout_alignLeft="@+id/protein_prog"
+        android:layout_alignStart="@+id/protein_prog"
+        android:layout_marginTop="25dp" />
+
+    <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+        android:id="@+id/oil_prog"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:rcBackgroundColor="@color/progress_color_bg"
+        app:rcBackgroundPadding="2dp"
+        app:rcIconBackgroundColor="@color/oil_color_icon"
+        app:rcIconPadding="1dp"
+        app:rcIconSize="40dp"
+        app:rcIconSrc="@mipmap/ic_oil_icon"
+        app:rcMax="1"
+        app:rcProgressColor="@color/oil_color_progress"
+        app:rcRadius="5dp"
+        android:layout_below="@+id/alcohol_prog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <com.akexorcist.roundcornerprogressbar.IconRoundCornerProgressBar
+        android:id="@+id/treats_prog"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:rcBackgroundColor="@color/progress_color_bg"
+        app:rcBackgroundPadding="2dp"
+        app:rcIconBackgroundColor="@color/treats_color_icon"
+        app:rcIconPadding="1dp"
+        app:rcIconSize="40dp"
+        app:rcIconSrc="@mipmap/ic_treats_icon"
+        app:rcMax="1"
+        app:rcProgressColor="@color/treats_color_progress"
+        app:rcRadius="5dp"
+        android:layout_below="@+id/oil_prog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/circleView"
+        android:layout_alignLeft="@+id/water_prog"
+        android:layout_alignStart="@+id/water_prog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fruits and Vegetables"
+        android:id="@+id/textView19"
+        android:layout_below="@+id/water_prog"
+        android:layout_alignLeft="@+id/fg_prog"
+        android:layout_alignStart="@+id/fg_prog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbohydrates"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/fg_prog"
+        android:layout_alignLeft="@+id/fg_prog"
+        android:layout_alignStart="@+id/fg_prog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dairy"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/carb_prog"
+        android:layout_alignLeft="@+id/dairy_prog"
+        android:layout_alignStart="@+id/dairy_prog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protein"
+        android:id="@+id/textView27"
+        android:layout_below="@+id/dairy_prog"
+        android:layout_alignLeft="@+id/dairy_prog"
+        android:layout_alignStart="@+id/dairy_prog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alcohol"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/protein_prog"
+        android:layout_alignLeft="@+id/protein_prog"
+        android:layout_alignStart="@+id/protein_prog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fats and Oils"
+        android:id="@+id/textView29"
+        android:layout_below="@+id/alcohol_prog"
+        android:layout_alignLeft="@+id/alcohol_prog"
+        android:layout_alignStart="@+id/alcohol_prog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Treats"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/oil_prog"
+        android:layout_alignLeft="@+id/oil_prog"
+        android:layout_alignStart="@+id/oil_prog" />
+
+
+</RelativeLayout>
+</ScrollView>

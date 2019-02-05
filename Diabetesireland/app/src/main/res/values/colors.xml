@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="themeColor">#3F1451</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="progress_color_bg">#F2F2F2</color>
+    <color name="carb_color_icon">#FF8C1A</color>
+    <color name="carb_color_progress">#FFBB33</color>
+
+    <color name="water_color_icon">#4D88FF</color>
+    <color name="water_color_progress">#99BBFF</color>
+
+    <color name="fg_color_icon">#47D147</color>
+    <color name="fg_color_progress">#85E085</color>
+
+    <color name="dairy_color_icon">#FFD11a</color>
+    <color name="dairy_color_progress">#FFE066</color>
+
+    <color name="protein_color_icon">#CC0000</color>
+    <color name="protein_color_progress">#FF3333</color>
+
+    <color name="alc_color_icon">#6B00B3</color>
+    <color name="alc_color_progress">#A31AFF</color>
+
+    <color name="treats_color_icon">#CC0052</color>
+    <color name="treats_color_progress">#FF3385</color>
+
+    <color name="oil_color_icon">#739900</color>
+    <color name="oil_color_progress">#CCFF33</color>
+
+    <color name="circle_bar">#5b006b</color>
+    <color name="circle_text">#41004d</color>
+
+
+
+
+
+
+
+</resources>

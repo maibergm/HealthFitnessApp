@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/metrics_spinner"
+        android:layout_gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/cmFt"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/inches"
+        android:layout_toStartOf="@+id/inches"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/inches"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/metrics_spinner"
+        android:layout_toStartOf="@+id/metrics_spinner"
+        android:layout_marginRight="5dp" />
+
+
+</RelativeLayout>
